@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This a small script to make your live easier.
+# This a small script to make your life easier.
 
 # Variables
 screen_1='Save-Watch'

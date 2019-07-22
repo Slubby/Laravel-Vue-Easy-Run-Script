@@ -59,17 +59,17 @@ To get a local copy up and running follow these simple example steps.
 
 Start the script
 ```sh
-sudo sh start.sh
+sudo ./start.sh
 ```
 
 Restart the script
 ```sh
-sudo sh start.sh
+sudo ./start.sh
 ```
 
 Close the script
 ```sh
-sudo sh start.sh kill
+sudo ./start.sh kill
 ```
 
 <!-- LICENSE -->

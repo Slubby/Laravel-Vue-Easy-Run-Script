@@ -9,7 +9,7 @@
 <br />
 <p align="center">
 
-  <h1 align="center">Laravel Easy Run Script</h1>
+  <h1 align="center">Laravel Vue Easy Run Script</h1>
 
   <p align="center">
     A Small Script to make you life easier

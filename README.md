@@ -57,7 +57,7 @@ To get a local copy up and running follow these simple example steps.
     ```
 3. than place is in your bin folder to use is every where
     ```sh
-    ln -s Laravel-Vue-Easy-Run-Script/start.sh /usr/bin/vue
+    mv Laravel-Vue-Easy-Run-Script/start.sh /usr/bin/vue
     ```
 4. Done
 

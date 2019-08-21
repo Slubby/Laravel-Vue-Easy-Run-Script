@@ -9,6 +9,8 @@ screen_2='Local-Server'
 
 
 # Fuctions
+
+#all the commands
 help() {
 echo "
 Usage: `basename $0` <command> [<options>]

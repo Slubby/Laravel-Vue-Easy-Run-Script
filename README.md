@@ -47,29 +47,52 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Download the start.sh
+1. Go to your home folder
     ```sh
-    git clone git@github.com:L27SlubbyGames/Laravel-Easy-Run-Script.git
+    cd
     ```
-2. Place the start.sh in your main folder
-3. Done
+2. Download the start.sh
+    ```sh
+    git clone https://github.com/L27SlubbyGames/Laravel-Vue-Easy-Run-Script.git
+    ```
+3. than place is in your bin folder to use is every where
+    ```sh
+    ln -s Laravel-Vue-Easy-Run-Script/start.sh /usr/bin/vue
+    ```
+4. Done
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Start the script
+Start the screens
 ```sh
-sudo ./start.sh
+sudo vue start
 ```
 
-Restart the script
+Restart the screens
 ```sh
-sudo ./start.sh
+sudo vue restart
 ```
 
-Close the script
+Close the screens
 ```sh
-sudo ./start.sh kill
+sudo vue kill
+```
+
+Make new laravel project
+```sh
+sudo vue new [<name of project>] 
+```
+
+
+Shows all the commands
+```sh
+sudo vue help
+```
+
+Info about the commands
+```sh
+sudo vue info
 ```
 
 <!-- LICENSE -->

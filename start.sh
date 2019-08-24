@@ -38,7 +38,7 @@ help_error() {
 
 # Start the sessions
 start_sessions() {
-	screen -dmS $screen_1 npm run watch
+	screen -dmS $screen_1 npm run watch-poll
 	screen -dmS $screen_2 php artisan serve
 }
 

@@ -55,11 +55,15 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     git clone https://github.com/L27SlubbyGames/Laravel-Vue-Easy-Run-Script.git
     ```
-3. than place is in your bin folder to use is every where
+3. Than place is in your bin folder to use is every where
     ```sh
     mv Laravel-Vue-Easy-Run-Script/start.sh /usr/bin/vue
     ```
-4. Done
+3. Give the script executable permission
+    ```sh
+    chmod +x /usr/bin/vue
+    ```
+5. Done
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -83,7 +87,6 @@ Make new laravel project
 ```sh
 sudo vue new [<name of project>] 
 ```
-
 
 Shows all the commands
 ```sh

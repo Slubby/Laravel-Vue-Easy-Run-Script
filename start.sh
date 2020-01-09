@@ -16,9 +16,9 @@ echo "
 Usage: `basename $0` <command> [<options>]
 
 The following commands are:
-	 base:	help | info
-	setup: 	new [<Project-name>]
-	  run: 	start | restart | stop
+	 base:	help | info (i)
+	setup: 	new [<Project-name>] (n)
+	  run: 	start (s) | restart (r) | stop (p)
 "
 }
 
@@ -77,7 +77,7 @@ commands="${1}"
 case ${commands} in
 
 	# Makes new laravel project, with name and no name
-	new)
+	[nN][eE][wW])
 		# Checks if the project doesn't exist already 
 		if [ ! -d "$2" ]; then
 			# Check if a name has been given
@@ -88,13 +88,13 @@ case ${commands} in
 				echo "\n\e[38;5;226mDo you want to install laravel in: (\e[39m${PWD}/$2\e[38;5;226m)\e[39m"
 			fi
 			# Asks the user if he wants to install the project with the given PATH 
-			read -r -p "Are You Sure? [Y/n] " input
+			read -r -p "Are You Sure? [y/n] " input
 			echo
 			# Checks the given answer
 			case $input in
 				[yY][eE][sS]|[yY])
 					# Full installs laravel with npm
-					laravel new $2
+					composer create-project --prefer-dist laravel/laravel $2
 					cd $2
 					npm install
 
@@ -115,7 +115,7 @@ case ${commands} in
 	;;
 
 	# starts the screens
-	start)
+	[sS][tT][aA][rR][tT]|[sS])
 		# Checks if screen is installed	
 		if ! [ -x "$(command -v screen)" ]; then
   			echo '\n\e[31mYou havent installed screen yet. \n\e[38;5;226mTry (\e[39mnpm install screen\e[38;5;226m) to install it.\n'
@@ -132,7 +132,7 @@ case ${commands} in
 	;;
 
 	# restart the screens
-	restart)
+	[rR][eE][sS][tT][aA][rR][tT]|[rR])
 		# Checks if screen is installed
 		if ! [ -x "$(command -v screen)" ]; then
   			echo '\n\e[31mYou havent installed screen yet. \n\e[38;5;226mTry (\e[39mnpm install screen\e[38;5;226m) to install it.\n'
@@ -150,7 +150,7 @@ case ${commands} in
 	;;
 
 	# Stops the screens
-	stop)
+	[sS][tT][oO][pP]|[pP])
 		# Checks if screen is installed
 		if ! [ -x "$(command -v screen)" ]; then
   			echo '\n\e[31mYou havent installed screen yet. \n\e[38;5;226mTry (\e[39mnpm install screen\e[38;5;226m) to install it.\n'
@@ -167,7 +167,7 @@ case ${commands} in
 	;;
 
 	# Info about the commands
-	info)
+	[iI][nN][fF][oO]|[iI])
 		info
 	;;
 

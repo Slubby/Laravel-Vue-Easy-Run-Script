@@ -57,11 +57,11 @@ To get a local copy up and running follow these simple example steps.
     ```
 3. Than place is in your bin folder to use is every where
     ```sh
-    mv Laravel-Vue-Easy-Run-Script/start.sh /usr/bin/vue
+    mv Laravel-Vue-Easy-Run-Script/start.sh /usr/bin/vues
     ```
 3. Give the script executable permission
     ```sh
-    chmod +x /usr/bin/vue
+    chmod +x /usr/bin/vues
     ```
 5. Done
 
@@ -70,32 +70,32 @@ To get a local copy up and running follow these simple example steps.
 
 Start the screens
 ```sh
-sudo vue start
+sudo vues start
 ```
 
 Restart the screens
 ```sh
-sudo vue restart
+sudo vues restart
 ```
 
 Close the screens
 ```sh
-sudo vue kill
+sudo vues stop
 ```
 
 Make new laravel project
 ```sh
-sudo vue new [<name of project>] 
+sudo vues new [<name of project>] 
 ```
 
 Shows all the commands
 ```sh
-sudo vue help
+sudo vues help
 ```
 
 Info about the commands
 ```sh
-sudo vue info
+sudo vues info
 ```
 
 <!-- LICENSE -->

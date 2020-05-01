@@ -158,7 +158,7 @@ case ${commands} in
 			# check is the screen running
 			if screen -ls | grep -q -e $screen_1 -e $screen_2; then
 				check_sessions
-				echo "\n\e[31mAll the screens are stop now\e[39m\n"
+				echo "\n\e[31mAll the screens are stopped now\e[39m\n"
 			else
 				echo "\n\e[38;5;226mThere were no screens to stop\e[39m"
 				help_error start

@@ -31,8 +31,8 @@ Info about the following command title's:
 		-v:	Laravel version. Example: -v ^7.0
 
 	  run:	Runs watch and serve for laravel.
-	  	-b:	Doesn't stat the build screen
-	  	-s:	Doesn't stat the server screen
+	  	-b:	Doesn't start the build screen
+	  	-s:	Doesn't start the server screen
 "
 }
 

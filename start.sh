@@ -160,7 +160,7 @@ case ${commands} in
 				builder=true
 				server=true
 
-				while getopts bs: options; do
+				while getopts bs options; do
 					case ${options} in
 						b) builder=false;;
 						s) server=false;;
@@ -185,7 +185,7 @@ case ${commands} in
 				builder=true
 				server=true
 
-				while getopts bs: options; do
+				while getopts bs options; do
 					case ${options} in
 						b) builder=false;;
 						s) server=false;;
